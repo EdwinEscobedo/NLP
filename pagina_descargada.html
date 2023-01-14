@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://riskanalyticsperu.com/xmlrpc.php">
+	<title>Machine Learning for Data Science &#8211; Risk Analytics Perú</title>
+<meta name='robots' content='max-image-preview:large' />
+<script type='application/javascript'>console.log('PixelYourSite Free version 9.1.1');</script>
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Risk Analytics Perú &raquo; Feed" href="https://riskanalyticsperu.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Risk Analytics Perú &raquo; Feed de los comentarios" href="https://riskanalyticsperu.com/comments/feed/" />
+<link rel='stylesheet' id='lp-course-wishlist-style-css' href='https://riskanalyticsperu.com/wp-content/plugins/learnpress-wishlist/assets/css/wishlist.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider-css' href='https://riskanalyticsperu.com/wp-content/plugins/LayerSlider/assets/static/layerslider/css/layerslider.css?ver=7.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://riskanalyticsperu.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:"0 0 1em 0"}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://riskanalyticsperu.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=7.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='https://riskanalyticsperu.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=7.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mpp_gutenberg-css' href='https://riskanalyticsperu.com/wp-content/plugins/metronet-profile-picture/dist/blocks.style.build.css?ver=2.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://riskanalyticsperu.com/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #3f81fc;--wp--preset--color--title: #333;--wp--preset--color--sub-title: #999;--wp--preset--color--border-input: #ddd;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 28px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 15px;--wp--preset--font-size--huge: 36px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://riskanalyticsperu.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.6.1' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='mc4wp-form-basic-css' href='https://riskanalyticsperu.com/wp-content/plugins/mailchimp-for-wp/assets/css/form-basic.css?ver=4.8.7' type='text/css' media='all' />
+<link rel='stylesheet' id='hfe-style-css' href='https://riskanalyticsperu.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.6.11' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://riskanalyticsperu.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.14.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://riskanalyticsperu.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.5.6' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-6-css' href='https://riskanalyticsperu.com/wp-content/uploads/elementor/css/post-6.css?ver=1646842392' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://riskanalyticsperu.com/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://riskanalyticsperu.com/wp-content/uploads/elementor/css/global.css?ver=1646842392' type='text/css' media='all' />
+<link rel='stylesheet' id='lp-font-awesome-5-css' href='https://riskanalyticsperu.com/wp-content/plugins/learnpress/assets/src/css/vendor/font-awesome-5.min.css?ver=4.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='learnpress-css' href='https://riskanalyticsperu.com/wp-content/plugins/learnpress/assets/css/learnpress.min.css?ver=4.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='learnpress-widgets-css' href='https://riskanalyticsperu.com/wp-content/plugins/learnpress/assets/css/widgets.min.css?ver=4.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/css/all.min.css?ver=4.6.5' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/css/v4-shims.min.css?ver=4.6.5' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicons-css' href='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/css/ionicons.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-pe-icon-7-css' href='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/css/font-pe-icon-7.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='flaticon-css' href='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/css/flaticon.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='thim-linearicons-font-css' href='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/css/linearicons.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='line-awesome-css' href='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/css/line-awesome.min.css?ver=4.6.5' type='text/css' media='all' />
+<link rel='stylesheet' id='thim-style-css' href='https://riskanalyticsperu.com/wp-content/themes/eduma/style.css?ver=4.6.5' type='text/css' media='all' />
+<style id='thim-style-inline-css' type='text/css'>
+:root{ --thim-body-primary-color: #3f81fc;--thim-body-secondary-color:#262626;--thim-button-text-color:#FFFFFF;--thim-button-hover-color:#224AE8;--thim-footer-font-title-font-size:14px;--thim-footer-font-title-line-height:40px;--thim-footer-font-title-text-transform:uppercase;--thim-footer-font-title-font-weight:700;--thim-footer-font-size:;--thim-main-menu-font-weight:600;} 
+</style>
+<link rel='stylesheet' id='thim-style-options-css' href='https://riskanalyticsperu.com/wp-content/uploads/tc_stylesheets/eduma.1654505372.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/learnpress-wishlist/assets/js/wishlist.js?ver=6.1.1' id='lp-course-wishlist-script-js'></script>
+<script type='text/javascript' id='layerslider-utils-js-extra'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"7.2.3","fixGSAP":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.utils.js?ver=7.2.3' id='layerslider-utils-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=7.2.3' id='layerslider-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.transitions.js?ver=7.2.3' id='layerslider-transitions-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.1.1' id='jquery-bind-first-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.6.5.1' id='js-cookie-js'></script>
+<script type='text/javascript' id='pys-js-extra'>
+/* <![CDATA[ */
+var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"static","name":"PageView","pixelIds":["766016334541920"],"eventID":"27a02482-a23b-497b-94c3-7459f3a504b6","params":{"page_title":"Machine Learning for Data Science","post_type":"lp_course","post_id":11672,"plugin":"PixelYourSite","user_role":"guest","event_url":"riskanalyticsperu.com\/curso\/machine-learning-for-data-science\/"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":{"woo_add_to_cart_on_button_click":{"facebook":{"delay":0,"type":"dyn","name":"AddToCart","pixelIds":["766016334541920"],"eventID":"7b31477b-244e-49d6-8491-4a7a4b3efa12","params":{"page_title":"Machine Learning for Data Science","post_type":"lp_course","post_id":11672,"plugin":"PixelYourSite","user_role":"guest","event_url":"riskanalyticsperu.com\/curso\/machine-learning-for-data-science\/"},"e_id":"woo_add_to_cart_on_button_click","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}}},"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["766016334541920"],"advancedMatching":[],"removeMetadata":false,"contentParams":{"post_type":"lp_course","post_id":11672,"content_name":"Machine Learning for Data Science","tags":"","categories":"Ciencia de Datos"},"commentEventEnabled":true,"wooVariableAsSimple":false,"downloadEnabled":true,"formEventEnabled":true,"ajaxForServerEvent":true,"serverApiEnabled":false,"wooCRSendFromServer":false},"debug":"","siteUrl":"https:\/\/riskanalyticsperu.com","ajaxUrl":"https:\/\/riskanalyticsperu.com\/wp-admin\/admin-ajax.php","enable_remove_download_url_param":"1","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_google_ads_consent_category":null,"cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false},"woo":{"enabled":true,"addToCartOnButtonEnabled":true,"addToCartOnButtonValueEnabled":true,"addToCartOnButtonValueOption":"price","singleProductId":null,"removeFromCartSelector":"form.woocommerce-cart-form .remove","addToCartCatchMethod":"add_cart_js"},"edd":{"enabled":false}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.1.1' id='pys-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/underscore.min.js?ver=1.13.4' id='underscore-js'></script>
+<script type='text/javascript' id='utils-js-extra'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1672940586","secure":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/utils.min.js?ver=6.1.1' id='utils-js'></script>
+<script type='text/javascript' id='lp-global-js-extra'>
+/* <![CDATA[ */
+var lpGlobalSettings = {"url":"https:\/\/riskanalyticsperu.com\/curso\/machine-learning-for-data-science\/","siteurl":"https:\/\/riskanalyticsperu.com","ajax":"https:\/\/riskanalyticsperu.com\/wp-admin\/admin-ajax.php","courses_url":"https:\/\/riskanalyticsperu.com\/courses\/","post_id":11672,"user_id":0,"theme":"eduma","localize":{"button_ok":"OK","button_cancel":"Cancelar","button_yes":"S\u00ed","button_no":"No"},"lp_rest_url":"https:\/\/riskanalyticsperu.com\/wp-json\/","nonce":"2f035cab20","option_enable_popup_confirm_finish":"yes"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/learnpress/assets/js/global.min.js?ver=4.1.5' id='lp-global-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/learnpress/assets/js/dist/utils.min.js?ver=4.1.5' id='lp-utils-js'></script>
+<meta name="generator" content="Powered by LayerSlider 7.2.3 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+<!-- LayerSlider updates and docs at: https://layerslider.com -->
+<link rel="https://api.w.org/" href="https://riskanalyticsperu.com/wp-json/" /><link rel="alternate" type="application/json" href="https://riskanalyticsperu.com/wp-json/wp/v2/lp_course/11672" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://riskanalyticsperu.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://riskanalyticsperu.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<meta name="generator" content="WooCommerce 6.5.1" />
+<link rel="canonical" href="https://riskanalyticsperu.com/curso/machine-learning-for-data-science/" />
+<link rel='shortlink' href='https://riskanalyticsperu.com/?p=11672' />
+<link rel="alternate" type="application/json+oembed" href="https://riskanalyticsperu.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Friskanalyticsperu.com%2Fcurso%2Fmachine-learning-for-data-science%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://riskanalyticsperu.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Friskanalyticsperu.com%2Fcurso%2Fmachine-learning-for-data-science%2F&#038;format=xml" />
+<style type='text/css'> .ae_data .elementor-editor-element-setting {
+            display:none !important;
+            }
+            </style><meta name="cdp-version" content="1.3.0" />
+		<style id="learn-press-custom-css">
+			:root {
+				--lp-primary-color: #ffb606;
+				--lp-secondary-color: #442e66;
+			}
+		</style>
+
+			<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	            <script type="text/javascript">
+                function tc_insert_internal_css(css) {
+                    var tc_style = document.createElement("style");
+                    tc_style.type = "text/css";
+                    tc_style.setAttribute('data-type', 'tc-internal-css');
+                    var tc_style_content = document.createTextNode(css);
+                    tc_style.appendChild(tc_style_content);
+                    document.head.appendChild(tc_style);
+                }
+            </script>
+			<meta name="generator" content="Powered by Slider Revolution 6.5.14 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://riskanalyticsperu.com/wp-content/uploads/2022/03/cropped-Sin-t222222222222222itulo-2-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://riskanalyticsperu.com/wp-content/uploads/2022/03/cropped-Sin-t222222222222222itulo-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://riskanalyticsperu.com/wp-content/uploads/2022/03/cropped-Sin-t222222222222222itulo-2-180x180.png" />
+<meta name="msapplication-TileImage" content="https://riskanalyticsperu.com/wp-content/uploads/2022/03/cropped-Sin-t222222222222222itulo-2-270x270.png" />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+<style id="kirki-inline-styles">/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmSU5fCRc-AMP6lbBP.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmSU5fABc-AMP6lbBP.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmSU5fCBc-AMP6lbBP.woff) format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmSU5fBxc-AMP6lbBP.woff) format('woff');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmSU5fCxc-AMP6lbBP.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmSU5fChc-AMP6lbBP.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOlCnqEu92Fr1MmSU5fBBc-AMP6lQ.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu72xMKTU1Kvnz.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu5mxMKTU1Kvnz.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7mxMKTU1Kvnz.woff) format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4WxMKTU1Kvnz.woff) format('woff');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7WxMKTU1Kvnz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu7GxMKTU1Kvnz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://riskanalyticsperu.com/wp-content/fonts/roboto/KFOmCnqEu92Fr1Mu4mxMKTU1Kg.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style>		<script type="text/javascript">
+			if (typeof ajaxurl === 'undefined') {
+				/* <![CDATA[ */
+				var ajaxurl = "https://riskanalyticsperu.com/wp-admin/admin-ajax.php"
+				/* ]]> */
+			}
+		</script>
+		</head>
+<body class="lp_course-template-default single single-lp_course postid-11672 wp-embed-responsive theme-eduma eduma learnpress learnpress-page woocommerce-no-js ehf-template-eduma ehf-stylesheet-eduma thim-body-preload bg-boxed-image size_wide thim-style-content-new-1 thim-popup-feature learnpress-v4 elementor-default elementor-kit-6" id="thim-body">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+			<div id="preload">
+				<div class="cssload-loader-style-1">
+													<div class="cssload-inner cssload-one"></div>
+													<div class="cssload-inner cssload-two"></div>
+													<div class="cssload-inner cssload-three"></div>
+												</div>			</div>
+		<!-- Mobile Menu-->
+<div class="mobile-menu-wrapper">
+    <div class="mobile-menu-inner">
+        <div class="icon-wrapper">
+            <div class="menu-mobile-effect navbar-toggle close-icon" data-effect="mobile-effect">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+        </div>
+        <nav class="mobile-menu-container mobile-effect">
+			<ul class="nav navbar-nav">
+	<li id="menu-item-9018" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-9018 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default"><a href="https://riskanalyticsperu.com/" class="tc-menu-inner">Inicio</a></li>
+<li id="menu-item-9787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9787 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default"><a href="https://riskanalyticsperu.com/courses/" class="tc-menu-inner">Cursos</a>
+<ul class="sub-menu">
+	<li id="menu-item-9788" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9788 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/ciencia-de-datos/" class="tc-menu-inner tc-megamenu-title">Ciencia de Datos</a></li>
+	<li id="menu-item-9791" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9791 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/herramientas-bi/" class="tc-menu-inner tc-megamenu-title">Herramientas BI</a></li>
+	<li id="menu-item-9792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9792 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/programacion-y-big-data/" class="tc-menu-inner tc-megamenu-title">Programación y Big Data</a></li>
+	<li id="menu-item-9790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9790 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/finanzas-cuantitativas/" class="tc-menu-inner tc-megamenu-title">Finanzas Cuantitativas</a></li>
+	<li id="menu-item-9789" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9789 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/econometria" class="tc-menu-inner tc-megamenu-title">Econometría</a></li>
+</ul><!-- End wrapper ul sub -->
+</li>
+<li id="menu-item-8978" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8978 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default"><a href="https://riskanalyticsperu.com/about-us/" class="tc-menu-inner">Nosotros</a></li>
+<li id="menu-item-8968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8968 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default"><a href="https://riskanalyticsperu.com/contact/" class="tc-menu-inner">Contacto</a></li>
+<li class="menu-right header_v4"><ul><li id="social-3" class="widget widget_social"><div class="thim-widget-social template-base"><div class="thim-social">
+		<ul class="social_link">
+		<li><a class="facebook hasTooltip" href="https://www.facebook.com/riskanalyticsperu?_rdc=1&_rdr" target="_self"><i class="fa fa-facebook"></i></a></li><li><a class="linkedin hasTooltip" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEbvQQ15Ef-kQAAAYE4MyWI0L8R1xFywaJ24DWu7REzp6c6Y0uD5537Tz4okqPShkGIDO_u3PQy_JEFMpm5zQiFQ3S25TtTam_vQxM3GbXd3lT-zKQR_8LwVmecoc-YP2eqILA=&original_referer=https://riskanalyticsperu.com/&sessionRedirect=httpswww.linkedin.comcompanyrisk-analytics-perC3BA" target="_self" ><i class="fa fa-linkedin"></i></a></li><li><a class="instagram hasTooltip" href="https://www.instagram.com/riskanalyticsperu/" target="_self" ><i class="fa fa-instagram"></i></a></li>	</ul>
+</div></div></li><li id="woocommerce_widget_cart-2" class="widget woocommerce widget_shopping_cart"><h4>Carrito</h4><a class="minicart_hover" id="header-mini-cart" href="https://riskanalyticsperu.com/cart/"><span class="cart-items-number"><i class="fa fa-fw fa-shopping-cart"></i><span class="wrapper-items-number"><span class="items-number">0</span></span></span><div class="clear"></div></a><div class="widget_shopping_cart_content" style="display: none;"></div></li><li id="courses-searching-3" class="widget widget_courses-searching"><div class="thim-widget-courses-searching template-courses-searching"><div class="thim-course-search-overlay">
+	<div class="search-toggle"><i class="fa fa-search"></i></div>
+	<div class="courses-searching layout-overlay">
+		<div class="search-popup-bg"></div>
+		<form method="get" action="https://riskanalyticsperu.com/courses/">
+			<input type="text" value="" name="s" placeholder="Buscar Cursos..."
+				   class="thim-s form-control courses-search-input" autocomplete="off"/>
+			<input type="hidden" value="course" name="ref"/>
+			<button type="submit"><i class="fa fa-search"></i></button>
+			<span class="widget-search-close"></span>
+		</form>
+		<ul class="courses-list-search list-unstyled"></ul>
+	</div>
+</div>
+</div></li></ul></li></ul>        </nav>
+    </div>
+</div>
+<div id="wrapper-container" class="wrapper-container">
+    <div class="content-pusher">
+        <header id="masthead" class="site-header affix-top bg-custom-sticky header_overlay header_v4">
+			<!-- <div class="main-menu"> -->
+<div class="thim-nav-wrapper header_full">
+	<div class="row">
+		<div class="navigation col-sm-12">
+			<div class="tm-table">
+				<div class="width-logo table-cell sm-logo">
+					<a href="https://riskanalyticsperu.com/" title="Risk Analytics Perú - Profesionales con experiencia" rel="home" class="thim-logo"><img src="https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-t222222222222222itulo-2.png" alt="Risk Analytics Perú"  data-sticky="https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2.png"></a>				</div>
+
+				<nav class="width-navigation table-cell table-right">
+					<ul class="nav navbar-nav menu-main-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-9018 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default"><a href="https://riskanalyticsperu.com/" class="tc-menu-inner">Inicio</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9787 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default"><a href="https://riskanalyticsperu.com/courses/" class="tc-menu-inner">Cursos</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9788 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/ciencia-de-datos/" class="tc-menu-inner tc-megamenu-title">Ciencia de Datos</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9791 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/herramientas-bi/" class="tc-menu-inner tc-megamenu-title">Herramientas BI</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9792 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/programacion-y-big-data/" class="tc-menu-inner tc-megamenu-title">Programación y Big Data</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9790 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/finanzas-cuantitativas/" class="tc-menu-inner tc-megamenu-title">Finanzas Cuantitativas</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9789 tc-menu-item tc-menu-depth-1 tc-menu-align-left"><a href="https://riskanalyticsperu.com/course-category/econometria" class="tc-menu-inner tc-megamenu-title">Econometría</a></li>
+</ul><!-- End wrapper ul sub -->
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8978 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default"><a href="https://riskanalyticsperu.com/about-us/" class="tc-menu-inner">Nosotros</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8968 tc-menu-item tc-menu-depth-0 tc-menu-align-left tc-menu-layout-default"><a href="https://riskanalyticsperu.com/contact/" class="tc-menu-inner">Contacto</a></li>
+</ul>
+				</nav>
+
+                <div class="menu-right table-cell table-right">
+                    <ul><li id="social-3" class="widget widget_social"><div class="thim-widget-social template-base"><div class="thim-social">
+		<ul class="social_link">
+		<li><a class="facebook hasTooltip" href="https://www.facebook.com/riskanalyticsperu?_rdc=1&_rdr" target="_self"><i class="fa fa-facebook"></i></a></li><li><a class="linkedin hasTooltip" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEbvQQ15Ef-kQAAAYE4MyWI0L8R1xFywaJ24DWu7REzp6c6Y0uD5537Tz4okqPShkGIDO_u3PQy_JEFMpm5zQiFQ3S25TtTam_vQxM3GbXd3lT-zKQR_8LwVmecoc-YP2eqILA=&original_referer=https://riskanalyticsperu.com/&sessionRedirect=httpswww.linkedin.comcompanyrisk-analytics-perC3BA" target="_self" ><i class="fa fa-linkedin"></i></a></li><li><a class="instagram hasTooltip" href="https://www.instagram.com/riskanalyticsperu/" target="_self" ><i class="fa fa-instagram"></i></a></li>	</ul>
+</div></div></li><li id="woocommerce_widget_cart-2" class="widget woocommerce widget_shopping_cart"><h4>Carrito</h4><a class="minicart_hover" id="header-mini-cart" href="https://riskanalyticsperu.com/cart/"><span class="cart-items-number"><i class="fa fa-fw fa-shopping-cart"></i><span class="wrapper-items-number"><span class="items-number">0</span></span></span><div class="clear"></div></a><div class="widget_shopping_cart_content" style="display: none;"></div></li><li id="courses-searching-3" class="widget widget_courses-searching"><div class="thim-widget-courses-searching template-courses-searching"><div class="thim-course-search-overlay">
+	<div class="search-toggle"><i class="fa fa-search"></i></div>
+	<div class="courses-searching layout-overlay">
+		<div class="search-popup-bg"></div>
+		<form method="get" action="https://riskanalyticsperu.com/courses/">
+			<input type="text" value="" name="s" placeholder="Buscar Cursos..."
+				   class="thim-s form-control courses-search-input" autocomplete="off"/>
+			<input type="hidden" value="course" name="ref"/>
+			<button type="submit"><i class="fa fa-search"></i></button>
+			<span class="widget-search-close"></span>
+		</form>
+		<ul class="courses-list-search list-unstyled"></ul>
+	</div>
+</div>
+</div></li></ul>                </div>
+
+                <div class="menu-mobile-effect navbar-toggle" data-effect="mobile-effect">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+
+			</div>
+			<!--end .row-->
+		</div>
+	</div>
+</div>        </header>
+
+        <div id="main-content"><section class="content-area">
+		<div
+			class="top_heading style_heading_2_out style_content_2">
+			<div class="top_site_main style_heading_2" style="color: #ffffff;background-image:url(https://importeduma.thimpress.com/wp-content/uploads/2015/12/bg-page.jpg);"><span class="overlay-top-header" style=""></span>				<div class="page-title-wrapper">
+					<div class="banner-wrapper container">
+						<h1>Machine Learning for Data Science</h1><div class="banner-description" style="color:#999">Risk Analytics</div>											</div>
+				</div>
+			</div>		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<ul itemscope itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs" class="breadcrumbs"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+  				<a itemprop="item" href="https://riskanalyticsperu.com" title="Inicio">
+					 <span itemprop="name">Inicio</span>
+   				</a>
+  				<meta itemprop="position" content="1" />
+ 			</li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+ 						<a itemprop="item" href="https://riskanalyticsperu.com/courses/" title="Todos los cursos">
+							<span itemprop="name">Todos los cursos</span>
+ 						</a>
+						<meta itemprop="position" content="2" />
+  					</li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+ 						<a itemprop="item" href="https://riskanalyticsperu.com/course-category/ciencia-de-datos/" title="Ciencia de Datos">
+							<span itemprop="name">Ciencia de Datos</span>
+  						</a>
+ 						<meta itemprop="position" content="3" />
+					</li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+ 						<span itemprop="name">Machine Learning for Data Science</span>
+ 						<meta itemprop="position" content=" 4" />
+ 					</li></ul>			</div>
+		</div>
+				</div>
+		<div class="container site-content"><div class="row"><main id="main" class="site-main col-sm-12 full-width">			<div id="lp-single-course" class="lp-single-course learn-press-4">
+			
+
+	<div class="content_course_2">
+
+		<div class="row">
+
+			<div class="col-md-9 content-single">
+
+					<div class="learnpress-content learn-press">
+
+						<div class="header_single_content">
+
+							<span class="bg_header"></span>
+
+							<div>
+<div class="course-thumbnail">
+	<img width="1000" height="700" src="https://riskanalyticsperu.com/wp-content/uploads/2022/10/Mesa-de-trabajo-19.png" class="attachment-full size-full wp-post-image" alt="" decoding="async" title="" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/10/Mesa-de-trabajo-19.png 1000w, https://riskanalyticsperu.com/wp-content/uploads/2022/10/Mesa-de-trabajo-19-300x210.png 300w, https://riskanalyticsperu.com/wp-content/uploads/2022/10/Mesa-de-trabajo-19-768x538.png 768w, https://riskanalyticsperu.com/wp-content/uploads/2022/10/Mesa-de-trabajo-19-600x420.png 600w" sizes="(max-width: 1000px) 100vw, 1000px" /></div>
+</div>														<div class="course-meta">
+								
+<div class="course-author">
+	<img width="96" height="96" src="https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-96x96.png" class="avatar avatar-96 photo" alt="Avatar del usuario" decoding="async" loading="lazy" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-96x96.png 96w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-150x150.png 150w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-100x100.png 100w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-24x24.png 24w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-48x48.png 48w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-192x192.png 192w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-52x52.png 52w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-26x26.png 26w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-128x128.png 128w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-64x64.png 64w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-32x32.png 32w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-50x50.png 50w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores.png 198w" sizes="(max-width: 96px) 100vw, 96px" />    <div class="author-contain">
+        <label itemprop="jobTitle">Profesor</label>
+
+        <div class="value" itemprop="name">
+			<a href="https://riskanalyticsperu.com/profile/Edwin/"><span>Edwin Escobedo</span></a>        </div>
+    </div>
+</div>    <div class="course-categories">
+        <label>Categorías</label>
+
+        <div class="value">
+            <span class="cat-links"><a href="https://riskanalyticsperu.com/course-category/ciencia-de-datos/" rel="tag">Ciencia de Datos</a></span>        </div>
+    </div>
+    							</div>
+													</div>
+
+					</div>
+
+				<div class="course-summary">
+					
+	<div id="tab-overview" class="row_content_course">
+		<div class="sc_heading clone_title  text-left">
+			<h2 class="title">Visión general</h2>
+			<div class="clone">Visión general</div>
+		</div>
+		
+
+<div class="course-description" id="learn-press-course-description">
+
+	
+    <div class="thim-course-content">
+        <h4><strong><span style="color: #154f8c;">DESCRIPCIÓN DEL CURSO</span></strong></h4>
+<p>En este curso aprenderemos el manejo de la herramienta Python desde un nivel introductorio con el manejo de estructuras y funciones, así como la presentación de las principales librerías orientadas a ciencia de datos. Continuaremos con la aplicación de algoritmos para la exploración de modelos de machine learning, series de tiempo y deep learning.</p>
+<h4><strong><span style="color: #154f8c;">OBJETIVO GENERAL</span></strong></h4>
+<p>Conocer la importancia estratégica del análisis de datos para las organizaciones y cómo las herramientas y técnicas de Analytics ayudan a las empresas a mejorar la toma de decisiones, generando valor y rentabilidad para las mismas, mediante el desarrollo de técnicas analíticas y algoritmos desarrollados en Python.</p>
+<h4><strong><span style="color: #154f8c;">OBJETIVOS ESPECÍFICOS</span></strong></h4>
+<ul>
+<li>Aprender a manejar tipos de datos básicos (números y strings), principales estructuras de datos en Python, manejo de funciones, arrays<br />
+y dataframes.</li>
+<li>Aprender a realizar un análisis estadístico y gráfico con Python.</li>
+<li>Comprender la importancia de la ciencia de datos en las empresas y el uso del machine learning para lograr sus objetivos comerciales.</li>
+<li>Aprender a utilizar Python para desarrollar algoritmos de aprendizaje automático.</li>
+<li>Comprender el procedimiento y las técnicas que se utilizan en el machine learning, así como saber diferenciarlas y utilizarlas según</li>
+<li>los objetivos buscados.</li>
+</ul>
+<h4><span style="color: #154faa;"><br />
+<strong>TEMAS</strong></span></h4>
+<ul class="thim-list-content">
+<li>Principales librerías para ciencia de datos</li>
+<li>EDA: Imputación de datos</li>
+<li>EDA: Tratamiento de datos</li>
+<li>Introducción al Machine Learning: Feature Selection</li>
+<li>Introducción al Machine Learning: Balanceo de datos</li>
+<li>Aprendizaje Supervisado &#8211; Regresión</li>
+<li>Aprendizaje Supervisado &#8211; Clasificación I</li>
+<li>Aprendizaje Supervisado &#8211; Clasificación II</li>
+<li>Aprendizaje No supervisado &#8211; Clustering</li>
+</ul>
+<h4><span style="color: #154faa;"><br />
+<strong>DOCENTE: <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Dr. Edwin Escobedo Cárdenas&quot;}" data-sheets-userformat="{&quot;2&quot;:13253,&quot;3&quot;:{&quot;1&quot;:0},&quot;5&quot;:{&quot;1&quot;:[{&quot;1&quot;:2,&quot;2&quot;:0,&quot;5&quot;:{&quot;1&quot;:2,&quot;2&quot;:0}},{&quot;1&quot;:0,&quot;2&quot;:0,&quot;3&quot;:3},{&quot;1&quot;:1,&quot;2&quot;:0,&quot;4&quot;:1}]},&quot;9&quot;:1,&quot;10&quot;:1,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;16&quot;:11}">Edwin Escobedo Cárdenas</span></strong></span></h4>
+<h5 style="text-align: justify;">Ph.D. en ciencias de la computación en la Universidad Federal de Ouro Preto, Brasil. Con formación en ingeniería informática en la Universidad Nacional de Trujillo. Lineas de investigación principales: Visión computacional, minería de datos, analítica predictiva donde viene publicando diferentes artículos científicos. Investigador Renacyt calificado MR-II. Actualmente, se desenvuelve como investigador de computer vision. Posee experiencia como consultor en proyectos de ciencia de datos. Igualmente, trabaja como docente universitario y de programas de especialización en ciencias de datos dictando cursos de Machine Learning, Visión computacional, Python para el análisis de datos, entre otros. Del mismo modo, ha sido invitado como revisor de artículos submetidos a diferentes conferencias.</h5>
+<h4><span style="color: #154faa;"><br />
+<strong>Características del Cursos</strong></span></h4>
+<p><img decoding="async" loading="lazy" class="alignnone size-full wp-image-9536" src="https://riskanalyticsperu.com/wp-content/uploads/2022/03/54654654.png" alt="" width="23" height="25" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/03/54654654.png 23w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/54654654-11x12.png 11w" sizes="(max-width: 23px) 100vw, 23px" /> <span style="color: #154faa;"><strong>Duración           </strong> </span><span style="color: #000000;">36 Horas Académicas* (1 hr = 45 min)*</span></p>
+<p><img decoding="async" loading="lazy" class="alignnone size-full wp-image-9537" src="https://riskanalyticsperu.com/wp-content/uploads/2022/03/31231231.png" alt="" width="19" height="28" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/03/31231231.png 19w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/31231231-8x12.png 8w" sizes="(max-width: 19px) 100vw, 19px" /> <strong><span style="color: #154faa;">Requisitos          </span></strong><span style="color: #000000;"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Python Intermedio&quot;}" data-sheets-userformat="{&quot;2&quot;:13249,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:1,&quot;10&quot;:1,&quot;11&quot;:4,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;16&quot;:11}">Ninguno</span></span></p>
+<p><img decoding="async" loading="lazy" class="alignnone size-full wp-image-9538" src="https://riskanalyticsperu.com/wp-content/uploads/2022/03/2135432542.png" alt="" width="23" height="25" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/03/2135432542.png 23w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/2135432542-11x12.png 11w" sizes="(max-width: 23px) 100vw, 23px" /> <strong><span style="color: #154faa;">Idioma                </span></strong><span style="color: #000000;">Español</span></p>
+<p><img decoding="async" loading="lazy" class="alignnone size-full wp-image-9539" src="https://riskanalyticsperu.com/wp-content/uploads/2022/03/23123123123123.png" alt="" width="22" height="25" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/03/23123123123123.png 22w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/23123123123123-11x12.png 11w" sizes="(max-width: 22px) 100vw, 22px" /> <strong><span style="color: #154faa;">Evaluaciones</span></strong>    <span style="color: #000000;">Si</span></p>
+<p><img decoding="async" loading="lazy" class="alignnone wp-image-9540" src="https://riskanalyticsperu.com/wp-content/uploads/2022/03/12312312312312.png" alt="" width="15" height="28" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/03/12312312312312.png 14w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/12312312312312-6x12.png 6w" sizes="(max-width: 15px) 100vw, 15px" /> <strong><span style="color: #154faa;">Certificación</span></strong> <span style="color: #000000;">     Sí</span></p>
+		<div data-elementor-type="page" data-elementor-id="11676" class="elementor elementor-11676" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-624852d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="624852d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eda862e" data-id="eda862e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c8497bb elementor-align-left elementor-widget elementor-widget-button" data-id="c8497bb" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://riskanalyticsperu.com/wp-content/uploads/2022/11/Curso-especializado-Machine-Learning-for-Data-Science.pdf" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Descargar Brochure</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+					</div>
+		
+    </div>
+
+    		<div class="thim-course-info">
+			<h3 class="title">Características del curso</h3>
+			<ul>
+				<li class="lectures-feature">
+					<i class="fa fa-files-o"></i>
+					<span class="label">Conferencias</span>
+					<span
+						class="value">0</span>
+				</li>
+				<li class="quizzes-feature">
+					<i class="fa fa-puzzle-piece"></i>
+					<span class="label">Cuestionarios</span>
+					<span
+						class="value">0</span>
+				</li>
+
+									<li class="duration-feature">
+						<i class="fa fa-clock-o"></i>
+						<span class="label">Duración</span>
+						<span
+							class="value">35 hours</span>
+					</li>
+				
+									<li class="skill-feature">
+						<i class="fa fa-level-up"></i>
+
+						<span class="label">Nivel de habilidad</span>
+						<span class="value">Todos los niveles</span>
+					</li>
+													<li class="language-feature">
+						<i class="fa fa-language"></i>
+						<span class="label">Idioma</span>
+						<span class="value">Español</span>
+					</li>
+								<li class="students-feature">
+					<i class="fa fa-users"></i>
+					<span class="label">Estudiantes</span>
+										<span class="value">19</span>
+				</li>
+								<li class="assessments-feature">
+					<i class="fa fa-check-square-o"></i>
+					<span class="label">Evaluaciones</span>
+					<span
+						class="value">Si</span>
+				</li>
+			</ul>
+					</div>
+		
+</div>	</div>
+
+
+<div class="thim-course-menu-landing">
+	<div class="container">
+		<ul class="thim-course-landing-tab">
+											<li role="presentation" class="course-nav-tab-overview">
+					<a href="#tab-overview">Visión general</a>
+				</li>
+					</ul>
+
+		<div class="thim-course-landing-button">
+<div class="course-price">
+
+    <div class="value ">
+
+        
+        S/400.00
+    </div>
+
+</div>
+
+
+<div class="lp-course-buttons">
+	
+<form name="course-external-link" class="course-external-link form-button lp-form" method="post">
+
+	<input type="hidden" name="lp-ajax" value="external-link">
+	<input type="hidden" name="id" value="11672">
+	<input type="hidden" name="nonce" value="6381437443">
+	<button type="submit" class="lp-button button">Comprar ahora</button>
+
+</form>
+
+</div>
+</div>	</div>
+</div>				</div>
+							<div class="thim-ralated-course  cls_courses_2">
+
+									<div class="sc_heading clone_title  text-left">
+						<h2 class="title">Te podría gustar</h2>
+						<div class="clone">Te podría gustar</div>
+					</div>
+				
+				<div class="thim-course-grid">
+					<div class="thim-carousel-wrapper" data-visible="3" data-itemtablet="2" data-itemmobile="1"
+						 data-pagination="1">
+																				<article class="lpr_course">
+								<div class="course-item">
+									<div class="course-thumbnail">
+										<a class="thumb" href="https://riskanalyticsperu.com/curso/python-for-data-science/">
+											<img src="https://riskanalyticsperu.com/wp-content/uploads/2022/04/Mesa-de-trabajo-3-500x400.png" alt="Python for Data Science" title=""  width="500" height="400">										</a>
+										
+									</div>
+									<div class="thim-course-content">
+																					<div class="course-author">
+												<img width="50" height="50" src="https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-50x50.png" class="avatar avatar-50 photo" alt="" decoding="async" loading="lazy" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-50x50.png 50w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-150x150.png 150w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-100x100.png 100w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-24x24.png 24w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-48x48.png 48w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-96x96.png 96w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-192x192.png 192w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-52x52.png 52w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-26x26.png 26w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-128x128.png 128w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-64x64.png 64w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-32x32.png 32w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores.png 198w" sizes="(max-width: 50px) 100vw, 50px" />												<div class="author-contain">
+													<div class="value">
+														<a href="https://riskanalyticsperu.com/profile/Edwin/">
+															Edwin Escobedo														</a>
+													</div>
+												</div>
+											</div>
+											<h2 class="course-title">
+												<a rel="bookmark"
+												   href="https://riskanalyticsperu.com/curso/python-for-data-science/">Python for Data Science</a>
+											</h2> <!-- .entry-header -->
+																															<div class="course-meta">
+																								<div class="course-students">
+													<label>Estudiantes</label>
+													
+													<div class="value"><i class="fa fa-group"></i>
+														17													</div>
+													
+												</div>
+																								<div class="course-price"><div class="value ">S/400.00</div></div>											</div>
+
+																			</div>
+								</div>
+							</article>
+																				<article class="lpr_course">
+								<div class="course-item">
+									<div class="course-thumbnail">
+										<a class="thumb" href="https://riskanalyticsperu.com/curso/power-bi-for-data-visualization/">
+											<img src="https://riskanalyticsperu.com/wp-content/uploads/2022/11/Mesa-de-trabajo-5-500x400.png" alt="Power BI for Data Visualization" title=""  width="500" height="400">										</a>
+										
+									</div>
+									<div class="thim-course-content">
+																					<div class="course-author">
+												<img width="50" height="50" src="https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-50x50.png" class="avatar avatar-50 photo" alt="" decoding="async" loading="lazy" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-50x50.png 50w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-150x150.png 150w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-12x12.png 12w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-100x100.png 100w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-24x24.png 24w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-48x48.png 48w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-96x96.png 96w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-192x192.png 192w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-52x52.png 52w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-26x26.png 26w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-128x128.png 128w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-64x64.png 64w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-32x32.png 32w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9-300x300.png 300w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/9.png 198w" sizes="(max-width: 50px) 100vw, 50px" />												<div class="author-contain">
+													<div class="value">
+														<a href="https://riskanalyticsperu.com/profile/Gilvard/">
+															Gilvard Pérez														</a>
+													</div>
+												</div>
+											</div>
+											<h2 class="course-title">
+												<a rel="bookmark"
+												   href="https://riskanalyticsperu.com/curso/power-bi-for-data-visualization/">Power BI for Data Visualization</a>
+											</h2> <!-- .entry-header -->
+																															<div class="course-meta">
+																								<div class="course-students">
+													<label>Estudiantes</label>
+													
+													<div class="value"><i class="fa fa-group"></i>
+														18													</div>
+													
+												</div>
+																								<div class="course-price"><div class="value ">S/420.00</div></div>											</div>
+
+																			</div>
+								</div>
+							</article>
+																				<article class="lpr_course">
+								<div class="course-item">
+									<div class="course-thumbnail">
+										<a class="thumb" href="https://riskanalyticsperu.com/curso/google-data-studio/">
+											<img src="https://riskanalyticsperu.com/wp-content/uploads/2022/10/Mesa-de-trabajo-4-500x400.png" alt="Google Data Studio" title=""  width="500" height="400">										</a>
+										
+									</div>
+									<div class="thim-course-content">
+																					<div class="course-author">
+												<img width="50" height="50" src="https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-50x50.png" class="avatar avatar-50 photo" alt="" decoding="async" loading="lazy" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-50x50.png 50w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-150x150.png 150w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-12x12.png 12w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-100x100.png 100w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-24x24.png 24w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-48x48.png 48w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-96x96.png 96w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-192x192.png 192w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-52x52.png 52w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-26x26.png 26w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-128x128.png 128w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-64x64.png 64w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-32x32.png 32w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8-300x300.png 300w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/8.png 198w" sizes="(max-width: 50px) 100vw, 50px" />												<div class="author-contain">
+													<div class="value">
+														<a href="https://riskanalyticsperu.com/profile/Brian/">
+															Brian Clemente														</a>
+													</div>
+												</div>
+											</div>
+											<h2 class="course-title">
+												<a rel="bookmark"
+												   href="https://riskanalyticsperu.com/curso/google-data-studio/">Google Data Studio</a>
+											</h2> <!-- .entry-header -->
+																															<div class="course-meta">
+																								<div class="course-students">
+													<label>Estudiantes</label>
+													
+													<div class="value"><i class="fa fa-group"></i>
+														23													</div>
+													
+												</div>
+																								<div class="course-price"><div class="value ">S/90.00</div></div>											</div>
+
+																			</div>
+								</div>
+							</article>
+																				<article class="lpr_course">
+								<div class="course-item">
+									<div class="course-thumbnail">
+										<a class="thumb" href="https://riskanalyticsperu.com/curso/sql-server-for-data-analytics/">
+											<img src="https://riskanalyticsperu.com/wp-content/uploads/2022/08/Mesa-de-trabajo-7-500x400.png" alt="SQL Server for Data Analytics" title=""  width="500" height="400">										</a>
+										
+									</div>
+									<div class="thim-course-content">
+																					<div class="course-author">
+												<img width="50" height="50" src="https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-50x50.png" class="avatar avatar-50 photo" alt="" decoding="async" loading="lazy" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-50x50.png 50w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-150x150.png 150w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-12x12.png 12w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-100x100.png 100w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-24x24.png 24w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-48x48.png 48w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-96x96.png 96w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-192x192.png 192w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-52x52.png 52w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-26x26.png 26w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-128x128.png 128w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-64x64.png 64w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-32x32.png 32w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7-300x300.png 300w, https://riskanalyticsperu.com/wp-content/uploads/2022/05/7.png 198w" sizes="(max-width: 50px) 100vw, 50px" />												<div class="author-contain">
+													<div class="value">
+														<a href="https://riskanalyticsperu.com/profile/Elton/">
+															Elton Yupanqui														</a>
+													</div>
+												</div>
+											</div>
+											<h2 class="course-title">
+												<a rel="bookmark"
+												   href="https://riskanalyticsperu.com/curso/sql-server-for-data-analytics/">SQL Server for Data Analytics</a>
+											</h2> <!-- .entry-header -->
+																															<div class="course-meta">
+																								<div class="course-students">
+													<label>Estudiantes</label>
+													
+													<div class="value"><i class="fa fa-group"></i>
+														15													</div>
+													
+												</div>
+																								<div class="course-price"><div class="value ">S/90.00</div></div>											</div>
+
+																			</div>
+								</div>
+							</article>
+																				<article class="lpr_course">
+								<div class="course-item">
+									<div class="course-thumbnail">
+										<a class="thumb" href="https://riskanalyticsperu.com/curso/python-fundamentals/">
+											<img src="https://riskanalyticsperu.com/wp-content/uploads/2022/06/Mesa-de-trabajo-9-2-500x400.png" alt="Python Fundamentals" title="python"  width="500" height="400">										</a>
+										
+									</div>
+									<div class="thim-course-content">
+																					<div class="course-author">
+												<img width="50" height="50" src="https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-50x50.png" class="avatar avatar-50 photo" alt="" decoding="async" loading="lazy" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-50x50.png 50w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-150x150.png 150w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-100x100.png 100w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-24x24.png 24w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-48x48.png 48w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-96x96.png 96w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-192x192.png 192w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-52x52.png 52w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-26x26.png 26w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-128x128.png 128w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-64x64.png 64w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores-32x32.png 32w, https://riskanalyticsperu.com/wp-content/uploads/2022/06/Fotos-profesores.png 198w" sizes="(max-width: 50px) 100vw, 50px" />												<div class="author-contain">
+													<div class="value">
+														<a href="https://riskanalyticsperu.com/profile/Edwin/">
+															Edwin Escobedo														</a>
+													</div>
+												</div>
+											</div>
+											<h2 class="course-title">
+												<a rel="bookmark"
+												   href="https://riskanalyticsperu.com/curso/python-fundamentals/">Python Fundamentals</a>
+											</h2> <!-- .entry-header -->
+																															<div class="course-meta">
+																								<div class="course-students">
+													<label>Estudiantes</label>
+													
+													<div class="value"><i class="fa fa-group"></i>
+														15													</div>
+													
+												</div>
+																								<div class="course-price"><div class="value ">S/90.00</div></div>											</div>
+
+																			</div>
+								</div>
+							</article>
+											</div>
+				</div>
+			</div>
+			
+			</div>
+
+			<div id="sidebar" class="col-md-3 sticky-sidebar">
+
+				<div class="course_right">
+
+					
+					<div class="course-payment">
+
+						
+<div class="course-price">
+
+    <div class="value ">
+
+        
+        S/400.00
+    </div>
+
+</div>
+
+
+<div class="lp-course-buttons">
+	
+<form name="course-external-link" class="course-external-link form-button lp-form" method="post">
+
+	<input type="hidden" name="lp-ajax" value="external-link">
+	<input type="hidden" name="id" value="11672">
+	<input type="hidden" name="nonce" value="6381437443">
+	<button type="submit" class="lp-button button">Comprar ahora</button>
+
+</form>
+
+</div>
+
+					</div>
+
+					
+					<div class="menu_course">
+												<ul>
+															<li role="presentation">
+									<a href="#tab-overview" data-toggle="tab">
+										<i class="fa fa-bookmark"></i>										<span>Visión general</span>
+									</a>
+								</li>
+													</ul>
+					</div>
+
+					
+
+					<div class="social_share">
+						<ul class="thim-social-share"><li class="heading">Compartir:</li><li><div class="facebook-social"><a target="_blank" class="facebook"  href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Friskanalyticsperu.com%2Fcurso%2Fmachine-learning-for-data-science%2F" title="Facebook"><i class="fa fa-facebook"></i></a></div></li><li><div class="googleplus-social"><a target="_blank" class="googleplus" href="https://plus.google.com/share?url=https%3A%2F%2Friskanalyticsperu.com%2Fcurso%2Fmachine-learning-for-data-science%2F&amp;title=Machine%20Learning%20for%20Data%20Science" title="Google Plus" onclick='javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;'><i class="fa fa-google"></i></a></div></li><li><div class="twitter-social"><a target="_blank" class="twitter" href="https://twitter.com/share?url=https%3A%2F%2Friskanalyticsperu.com%2Fcurso%2Fmachine-learning-for-data-science%2F&amp;text=Machine%20Learning%20for%20Data%20Science" title="Twitter"><i class="fa fa-twitter"></i></a></div></li><li><div class="pinterest-social"><a target="_blank" class="pinterest"  href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Friskanalyticsperu.com%2Fcurso%2Fmachine-learning-for-data-science%2F&amp;description=DESCRIPCI%C3%93N%20DEL%20CURSO%20En%20este%20curso%20aprenderemos%20el%20manejo%20de%20la%20herramienta%20Python%20desde%20un%20nivel%20introductorio%20con%20el%20manejo%20de%20estructuras%20y%20funciones%2C%20as%C3%AD%20como%20la%20presentaci%C3%B3n%20de%20las%20principales%20librer%C3%ADas%20orientadas%20a%20ciencia%20de%20datos.%20Continuaremos%20con%20la%20%26hellip%3B%20&amp;media=https%3A%2F%2Friskanalyticsperu.com%2Fwp-content%2Fuploads%2F2022%2F10%2FMesa-de-trabajo-19.png" onclick="window.open(this.href); return false;" title="Pinterest"><i class="fa fa-pinterest-p"></i></a></div></li></ul>					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+		<script type="text/javascript">
+			function moOpenIdLogin(app_name, is_custom_app) {
+								var base_url = 'https://riskanalyticsperu.com';
+				var request_uri = '/curso/machine-learning-for-data-science/';
+				var http = 'https://';
+				var http_host = 'riskanalyticsperu.com';
+				if (is_custom_app == 'false') {
+					if (request_uri.indexOf('wp-login.php') != -1) {
+						var redirect_url = base_url + '/?option=getmosociallogin&app_name=';
+
+					} else {
+						var redirect_url = http + http_host + request_uri;
+						if (redirect_url.indexOf('?') != -1) {
+							redirect_url = redirect_url + '&option=getmosociallogin&app_name=';
+						} else {
+							redirect_url = redirect_url + '?option=getmosociallogin&app_name=';
+						}
+					}
+				} else {
+					var current_url = window.location.href;
+					var cname = 'redirect_current_url';
+					var d = new Date();
+					d.setTime(d.getTime() + (2 * 24 * 60 * 60 * 1000));
+					var expires = 'expires=' + d.toUTCString();
+					document.cookie = cname + '=' + current_url + ';' + expires + ';path=/';   //path = root path(/)
+					if (request_uri.indexOf('wp-login.php') != -1) {
+						var redirect_url = base_url + '/?option=oauthredirect&app_name=';
+					} else {
+						var redirect_url = http + http_host + request_uri;
+						if (redirect_url.indexOf('?') != -1)
+							redirect_url = redirect_url + '&option=oauthredirect&app_name=';
+						else
+							redirect_url = redirect_url + '?option=oauthredirect&app_name=';
+					}
+				}
+				var redirect_to = jQuery('#loginform input[name="redirect_to"]').val();
+				redirect_url = redirect_url + app_name + '&redirect_to=' + encodeURIComponent(redirect_to);
+				window.location.href = redirect_url;
+			}
+		</script>
+				<script type="text/javascript">
+			function moOpenIdLogin(app_name, is_custom_app) {
+								var base_url = 'https://riskanalyticsperu.com';
+				var request_uri = '/curso/machine-learning-for-data-science/';
+				var http = 'https://';
+				var http_host = 'riskanalyticsperu.com';
+				if (is_custom_app == 'false') {
+					if (request_uri.indexOf('wp-login.php') != -1) {
+						var redirect_url = base_url + '/?option=getmosociallogin&app_name=';
+
+					} else {
+						var redirect_url = http + http_host + request_uri;
+						if (redirect_url.indexOf('?') != -1) {
+							redirect_url = redirect_url + '&option=getmosociallogin&app_name=';
+						} else {
+							redirect_url = redirect_url + '?option=getmosociallogin&app_name=';
+						}
+					}
+				} else {
+					var current_url = window.location.href;
+					var cname = 'redirect_current_url';
+					var d = new Date();
+					d.setTime(d.getTime() + (2 * 24 * 60 * 60 * 1000));
+					var expires = 'expires=' + d.toUTCString();
+					document.cookie = cname + '=' + current_url + ';' + expires + ';path=/';   //path = root path(/)
+					if (request_uri.indexOf('wp-login.php') != -1) {
+						var redirect_url = base_url + '/?option=oauthredirect&app_name=';
+					} else {
+						var redirect_url = http + http_host + request_uri;
+						if (redirect_url.indexOf('?') != -1)
+							redirect_url = redirect_url + '&option=oauthredirect&app_name=';
+						else
+							redirect_url = redirect_url + '?option=oauthredirect&app_name=';
+					}
+				}
+				var redirect_to = jQuery('#loginform input[name="redirect_to"]').val();
+				redirect_url = redirect_url + app_name + '&redirect_to=' + encodeURIComponent(redirect_to);
+				window.location.href = redirect_url;
+			}
+		</script>
+		</div></main></div></div></section>			<div class="footer-bottom-above">
+
+				<div class="container">
+					<aside id="text-6" class="widget widget_text footer_bottom_widget">			<div class="textwidget">		<div data-elementor-type="wp-post" data-elementor-id="8887" class="elementor elementor-8887" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<footer class="elementor-section elementor-top-section elementor-element elementor-element-2e671e2 elementor-section-stretched footer_newsletter elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2e671e2" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e9ad525" data-id="e9ad525" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-417ecff elementor-widget elementor-widget-thim-heading" data-id="417ecff" data-element_type="widget" data-widget_type="thim-heading.default">
+				<div class="elementor-widget-container">
+			<div class="thim-widget-heading template-base"><div class="sc_heading  text-center"><h3 style="text-transform: uppercase;color:#ffffff;font-size:50px;font-weight:200;" class="title">Suscríbete al boletín</h3><p class="sub-heading" style="color:#FFFFFF;">Forma parte de nuestra comunidad y accede a nuestras últimas actualizaciones y promociones exclusivas.</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-11ea761 elementor-mobile-button-align-start elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="11ea761" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor-pro - v3.3.0 - 06-06-2021 */
+.elementor-button.elementor-hidden,.elementor-hidden{display:none}.e-form__step{width:100%}.e-form__step:not(.elementor-hidden){display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons{-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons,.e-form__buttons__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex}.e-form__indicators{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:nowrap;flex-wrap:nowrap;font-size:13px;margin-bottom:var(--e-form-steps-indicators-spacing)}.e-form__indicators,.e-form__indicators__indicator{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.e-form__indicators__indicator{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-preferred-size:0;flex-basis:0;padding:0 var(--e-form-steps-divider-gap)}.e-form__indicators__indicator__progress{width:100%;position:relative;background-color:var(--e-form-steps-indicator-progress-background-color);border-radius:var(--e-form-steps-indicator-progress-border-radius);overflow:hidden}.e-form__indicators__indicator__progress__meter{width:var(--e-form-steps-indicator-progress-meter-width,0);height:var(--e-form-steps-indicator-progress-height);line-height:var(--e-form-steps-indicator-progress-height);padding-right:15px;border-radius:var(--e-form-steps-indicator-progress-border-radius);background-color:var(--e-form-steps-indicator-progress-color);color:var(--e-form-steps-indicator-progress-meter-color);text-align:right;-webkit-transition:width .1s linear;-o-transition:width .1s linear;transition:width .1s linear}.e-form__indicators__indicator:first-child{padding-left:0}.e-form__indicators__indicator:last-child{padding-right:0}.e-form__indicators__indicator--state-inactive{color:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-inactive-secondary-color,#fff)}.e-form__indicators__indicator--state-active{color:var(--e-form-steps-indicator-active-primary-color,#39b54a);border-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-completed{color:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a);background-color:initial}.e-form__indicators__indicator__icon{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);font-size:var(--e-form-steps-indicator-icon-size);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow:hidden;margin-bottom:10px}.e-form__indicators__indicator__icon img{width:var(--e-form-steps-indicator-icon-size);height:auto}.e-form__indicators__indicator__number{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px}.e-form__indicators__indicator--shape-circle{border-radius:50%}.e-form__indicators__indicator--shape-square{border-radius:0}.e-form__indicators__indicator--shape-rounded{border-radius:5px}.e-form__indicators__indicator--shape-none{border:0}.e-form__indicators__indicator__label{text-align:center}.e-form__indicators__indicator__separator{width:100%;height:var(--e-form-steps-divider-width);background-color:#c2cbd2}.e-form__indicators--type-icon,.e-form__indicators--type-icon_text,.e-form__indicators--type-number,.e-form__indicators--type-number_text{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.e-form__indicators--type-icon .e-form__indicators__indicator__separator,.e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,.e-form__indicators--type-number .e-form__indicators__indicator__separator,.e-form__indicators--type-number_text .e-form__indicators__indicator__separator{margin-top:calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)}.elementor-field-type-hidden{display:none}.elementor-field-type-html{display:inline-block}.elementor-login .elementor-lost-password,.elementor-login .elementor-remember-me{font-size:.85em}.elementor-field-type-recaptcha_v3 .elementor-field-label{display:none}.elementor-button .elementor-form-spinner{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.elementor-form .elementor-button>span{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-form .elementor-button .elementor-button-text{white-space:normal;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}.elementor-form .elementor-button svg{height:auto}</style>		<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="8887"/>
+			<input type="hidden" name="form_id" value="11ea761"/>
+			<input type="hidden" name="referer_title" value="Machine Learning for Data Science" />
+
+							<input type="hidden" name="queried_id" value="11672"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-above">
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
+					<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Correo Electrónico" required="required" aria-required="true">				</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button type="submit" class="elementor-button elementor-size-sm">
+						<span >
+															<span class=" elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">Suscribirse</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</footer>
+				<footer class="elementor-section elementor-top-section elementor-element elementor-element-2bff249 elementor-section-stretched footer_newsletter elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2bff249" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3ca4dbe" data-id="3ca4dbe" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-03e6ca2 elementor-widget elementor-widget-thim-heading" data-id="03e6ca2" data-element_type="widget" data-widget_type="thim-heading.default">
+				<div class="elementor-widget-container">
+			<div class="thim-widget-heading template-base"><div class="sc_heading  text-center"><h3 style="text-transform: uppercase;color:#ffffff;font-size:50px;font-weight:200;" class="title">Suscríbete al boletín</h3><p class="sub-heading" style="color:#FFFFFF;">Forma parte de nuestra comunidad y accede a nuestras últimas actualizaciones y promociones exclusivas.</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-584097a elementor-widget elementor-widget-shortcode" data-id="584097a" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><script>(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><!-- Mailchimp for WordPress v4.8.7 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-3383" method="post" data-id="3383" data-name="Default sign-up form" ><div class="mc4wp-form-fields"><input type="email" id="mc4wp_email" name="EMAIL" placeholder="Correo electrónico" required /><input type="submit" value="Suscribirse" /></div><label style="display: none !important;">Deja vacío este campo si eres humano: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1672940589" /><input type="hidden" name="_mc4wp_form_id" value="3383" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</footer>
+						</div>
+					</div>
+		
+</div>
+		</aside><aside id="text-7" class="widget widget_text footer_bottom_widget">			<div class="textwidget">		<div data-elementor-type="wp-post" data-elementor-id="8891" class="elementor elementor-8891" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-ed9c2b6 elementor-section-stretched elementor-reverse-mobile elementor-reverse-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ed9c2b6" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;gradient&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-623fbab" data-id="623fbab" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-43224f9 elementor-widget elementor-widget-spacer" data-id="43224f9" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6b38b69 elementor-widget elementor-widget-heading" data-id="6b38b69" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.6 - 28-02-2022 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Conviértete en instructor</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c5b337d elementor-widget elementor-widget-heading" data-id="c5b337d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Únete a nuestra comunidad educativa </h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-15bdbc4 elementor-align-center elementor-widget elementor-widget-button" data-id="15bdbc4" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://riskanalyticsperu.com/become-a-teacher/" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Leer MAS</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4badf7c elementor-widget elementor-widget-spacer" data-id="4badf7c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-af22538 elementor-section-stretched elementor-reverse-mobile elementor-hidden-desktop elementor-hidden-tablet elementor-reverse-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="af22538" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;gradient&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-23fc843" data-id="23fc843" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9ced0c2 elementor-widget elementor-widget-spacer" data-id="9ced0c2" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0d61f36 elementor-widget elementor-widget-heading" data-id="0d61f36" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Conviértete en instructor</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c215d0a elementor-widget elementor-widget-heading" data-id="c215d0a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Únete a nuestra comunidad educativa </h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-35272ff elementor-align-center elementor-widget elementor-widget-button" data-id="35272ff" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://riskanalyticsperu.com/become-a-teacher/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Leer MAS</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d5f39c4 elementor-widget elementor-widget-spacer" data-id="d5f39c4" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+					</div>
+		
+</div>
+		</aside>				</div>
+
+			</div>
+			
+<footer id="colophon" class="white_background site-footer">
+	        <div class="footer">
+            <div class="container">
+                <div class="row">
+					<aside id="text-8" class="widget widget_text footer_widget">			<div class="textwidget">		<div data-elementor-type="wp-post" data-elementor-id="8895" class="elementor elementor-8895" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<footer class="elementor-section elementor-top-section elementor-element elementor-element-56df768 elementor-section-full_width elementor-section-stretched elementor-hidden-mobile elementor-section-height-default elementor-section-height-default" data-id="56df768" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-022f6f6" data-id="022f6f6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f84d6fc elementor-widget elementor-widget-image" data-id="f84d6fc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.6 - 28-02-2022 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="3524" height="2724" src="https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2.png 3524w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-300x232.png 300w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-1024x792.png 1024w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-768x594.png 768w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-1536x1187.png 1536w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-2048x1583.png 2048w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-600x464.png 600w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-16x12.png 16w" sizes="(max-width: 3524px) 100vw, 3524px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-6284f58 elementor-shape-circle e-grid-align-mobile-left elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="6284f58" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.6 - 28-02-2022 */
+.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);-webkit-box-pack:var(--justify-content,center);-ms-flex-pack:var(--justify-content,center);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));height:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;background-color:#818a91;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#818a91}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{-webkit-border-radius:10%;border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{-webkit-border-radius:50%;border-radius:50%}</style>		<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-5d4e493" href="https://web.facebook.com/riskanalyticsperu" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-f19c1a9" href="https://www.instagram.com/riskanalyticsperu/" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-92efae5" href="https://www.linkedin.com/company/risk-analytics-per%C3%BA" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Linkedin</span>
+						<i class="fab fa-linkedin"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-8001885" href="https://api.whatsapp.com/send?phone=51902679682&#038;app=facebook&#038;entry_point=page_cta&#038;fbclid=IwAR1ogqle6vQB0xW3wWdYfKJJ14tiwJqtNhBwnmuL7ueVSo0oIK7Y0fyjt1M" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Whatsapp</span>
+						<i class="fab fa-whatsapp"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-7c43314" href="https://www.youtube.com/channel/UCIBHejqzO1LkuKf7t7ND9kw" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-tiktok elementor-repeater-item-21fdcbe" href="https://www.tiktok.com/@riskanalyticsperu?lang=es" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Tiktok</span>
+						<i class="fab fa-tiktok"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6f4b47e" data-id="6f4b47e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a5a72f2 elementor-widget elementor-widget-heading" data-id="a5a72f2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">EMPRESA</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9856b6c elementor-mobile-align-center elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="9856b6c" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.6 - 28-02-2022 */
+.elementor-widget.elementor-icon-list--layout-inline .elementor-widget-container{overflow:hidden}.elementor-widget .elementor-icon-list-items.elementor-inline-items{margin-right:-8px;margin-left:-8px}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-right:8px;margin-left:8px}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{width:auto;left:auto;right:auto;position:relative;height:100%;border-top:0;border-bottom:0;border-right:0;border-left-width:1px;border-style:solid;right:-8px}.elementor-widget .elementor-icon-list-items{list-style-type:none;margin:0;padding:0}.elementor-widget .elementor-icon-list-item{margin:0;padding:0;position:relative}.elementor-widget .elementor-icon-list-item:after{position:absolute;bottom:0;width:100%}.elementor-widget .elementor-icon-list-item,.elementor-widget .elementor-icon-list-item a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:inherit}.elementor-widget .elementor-icon-list-icon+.elementor-icon-list-text{-ms-flex-item-align:center;align-self:center;padding-left:5px}.elementor-widget .elementor-icon-list-icon{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget .elementor-icon-list-icon svg{width:var(--e-icon-list-icon-size,1em);height:var(--e-icon-list-icon-size,1em)}.elementor-widget .elementor-icon-list-icon i{width:1.25em;font-size:var(--e-icon-list-icon-size)}.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon{text-align:var(--e-icon-list-icon-align)}.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon svg{margin:var(--e-icon-list-icon-margin,0 calc(var(--e-icon-list-icon-size, 1em) * .25) 0 0)}.elementor-widget.elementor-list-item-link-full_width a{width:100%}.elementor-widget.elementor-align-center .elementor-icon-list-item,.elementor-widget.elementor-align-center .elementor-icon-list-item a{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-align-center .elementor-inline-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-align-left .elementor-icon-list-item,.elementor-widget.elementor-align-left .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.elementor-widget.elementor-align-left .elementor-inline-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-align-right .elementor-icon-list-item,.elementor-widget.elementor-align-right .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.elementor-widget.elementor-align-right .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget:not(.elementor-align-right) .elementor-icon-list-item:after{left:0}.elementor-widget:not(.elementor-align-left) .elementor-icon-list-item:after{right:0}@media (max-width:1024px){.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item a,.elementor-widget.elementor-tablet-align-center .elementor-icon-list-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-tablet-align-left .elementor-icon-list-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-tablet-align-left .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-left .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.elementor-widget.elementor-tablet-align-right .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget.elementor-tablet-align-right .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-right .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.elementor-widget:not(.elementor-tablet-align-right) .elementor-icon-list-item:after{left:0}.elementor-widget:not(.elementor-tablet-align-left) .elementor-icon-list-item:after{right:0}}@media (max-width:767px){.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item a,.elementor-widget.elementor-mobile-align-center .elementor-icon-list-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-mobile-align-left .elementor-icon-list-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-mobile-align-left .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-left .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.elementor-widget.elementor-mobile-align-right .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget.elementor-mobile-align-right .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-right .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.elementor-widget:not(.elementor-mobile-align-right) .elementor-icon-list-item:after{left:0}.elementor-widget:not(.elementor-mobile-align-left) .elementor-icon-list-item:after{right:0}}</style>		<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://riskanalyticsperu.com/" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">INICIO</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://riskanalyticsperu.com/courses/" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">CURSOS</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://riskanalyticsperu.com/about-us/" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">NOSOTROS</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://riskanalyticsperu.com/contact/" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">CONTACTO</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-cbbcfd7" data-id="cbbcfd7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7acd48d elementor-widget elementor-widget-heading" data-id="7acd48d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">CONTACTO</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1a0dc8e elementor-widget elementor-widget-text-editor" data-id="1a0dc8e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.6 - 28-02-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<ul><li style="text-align: center;"><i class="lnr icon-envelope"> </i><a href="mail:informes@risknalyticsperu.com">informes@riskanalyticsperu.com</a></li><li style="text-align: center;"><i class="lnr icon-telephone"> </i> <a href="https://api.whatsapp.com/send?phone=51902679682&amp;app=facebook&amp;entry_point=page_cta&amp;fbclid=IwAR1ogqle6vQB0xW3wWdYfKJJ14tiwJqtNhBwnmuL7ueVSo0oIK7Y0fyjt1M">+(51) 902 679 682</a></li><li style="text-align: center;"><i class="lnr icon-map-marker"> </i> Ate &#8211; Lima</li><li style="text-align: center;">Lunes a Sábado: 8:30 am – 6:30 pm</li></ul>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</footer>
+				<footer class="elementor-section elementor-top-section elementor-element elementor-element-a2c8a2f elementor-section-full_width elementor-section-stretched elementor-hidden-desktop elementor-hidden-tablet elementor-section-height-default elementor-section-height-default" data-id="a2c8a2f" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d7b2dbe" data-id="d7b2dbe" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ae1619b elementor-widget elementor-widget-image" data-id="ae1619b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="3524" height="2724" src="https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2.png 3524w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-300x232.png 300w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-1024x792.png 1024w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-768x594.png 768w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-1536x1187.png 1536w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-2048x1583.png 2048w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-600x464.png 600w, https://riskanalyticsperu.com/wp-content/uploads/2022/03/Sin-tit2w22222222222222ulo-2-16x12.png 16w" sizes="(max-width: 3524px) 100vw, 3524px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-f31cd51 elementor-shape-circle e-grid-align-mobile-center elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="f31cd51" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-5d4e493" href="https://web.facebook.com/riskanalyticsperu" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-f19c1a9" href="https://www.instagram.com/riskanalyticsperu/" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-92efae5" href="https://www.linkedin.com/company/risk-analytics-per%C3%BA" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Linkedin</span>
+						<i class="fab fa-linkedin"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-8001885" href="https://api.whatsapp.com/send?phone=51902679682&#038;app=facebook&#038;entry_point=page_cta&#038;fbclid=IwAR1ogqle6vQB0xW3wWdYfKJJ14tiwJqtNhBwnmuL7ueVSo0oIK7Y0fyjt1M" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Whatsapp</span>
+						<i class="fab fa-whatsapp"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-380da8a" href="https://www.youtube.com/channel/UCIBHejqzO1LkuKf7t7ND9kw" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-tiktok elementor-repeater-item-c205661" href="https://www.tiktok.com/@riskanalyticsperu?lang=es" target="_blank" rel="noopener">
+						<span class="elementor-screen-only">Tiktok</span>
+						<i class="fab fa-tiktok"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-886f0fa" data-id="886f0fa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0f4ebcc elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="0f4ebcc" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.6 - 28-02-2022 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);-ms-flex-negative:0;flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9db809c elementor-widget elementor-widget-heading" data-id="9db809c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">EMPRESA</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-06d6e42 elementor-mobile-align-center elementor-align-center elementor-hidden-tablet elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="06d6e42" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://riskanalyticsperu.com/" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">INICIO</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://riskanalyticsperu.com/courses/" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">CURSOS</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://riskanalyticsperu.com/about-us/" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">NOSOTROS</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://riskanalyticsperu.com/contact/" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">CONTACTO</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6bbcede" data-id="6bbcede" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9735f20 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="9735f20" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-95125df elementor-widget elementor-widget-heading" data-id="95125df" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">CONTACTO</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-884beac elementor-mobile-align-center elementor-align-center elementor-hidden-desktop elementor-hidden-tablet elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="884beac" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="mailto:informes@risknalyticsperu.com" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">informes@riskanalyticsperu.com</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://api.whatsapp.com/send?phone=51902679682&#038;app=facebook&#038;entry_point=page_cta&#038;fbclid=IwAR1ogqle6vQB0xW3wWdYfKJJ14tiwJqtNhBwnmuL7ueVSo0oIK7Y0fyjt1M" target="_blank" rel="noopener">
+
+											<span class="elementor-icon-list-text">  +(51) 902 679 682</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-text">Ate - Lima</span>
+									</li>
+								<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-text">Lunes a Sábado: 8:30 am – 6:30 pm</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</footer>
+						</div>
+					</div>
+		
+</div>
+		</aside>                </div>
+            </div>
+        </div>
+	
+				<div class="copyright-area">
+				<div class="container">
+					<div class="copyright-content">
+						<div class="row">
+							<div class="col-sm-6"><p class="text-copyright"></p></div><div class="col-sm-6 text-right"><aside id="nav_menu-14" class="widget widget_nav_menu"><div class="menu-privacy-container"><ul id="menu-privacy" class="menu"><li id="menu-item-8975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8975 tc-menu-item tc-menu-depth-0 tc-menu-layout-default"><a href="#" class="tc-menu-inner">Privacy</a></li>
+<li id="menu-item-8976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8976 tc-menu-item tc-menu-depth-0 tc-menu-layout-default"><a href="#" class="tc-menu-inner">Terms</a></li>
+<li id="menu-item-8977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8977 tc-menu-item tc-menu-depth-0 tc-menu-layout-default"><a href="#" class="tc-menu-inner">Sitemap</a></li>
+<li id="menu-item-8997" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8997 tc-menu-item tc-menu-depth-0 tc-menu-layout-default"><a href="https://themeforest.net/item/education-wordpress-theme-education-wp/14058034?ref=ThimPress&#038;utm_source=demo&#038;utm_medium=demofooter" class="tc-menu-inner">Purchase</a></li>
+</ul></div></aside></div>						</div>
+					</div>
+				</div>
+			</div>
+		
+</footer><!-- #colophon -->
+</div><!--end main-content-->
+
+
+</div><!-- end content-pusher-->
+
+			<a href="#" id="back-to-top">
+				<i class="fa fa-chevron-up" aria-hidden="true"></i>
+			</a>
+			
+
+</div><!-- end wrapper-container -->
+
+
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<script>(function() {function maybePrefixUrlField() {
+	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if (urlFields) {
+	for (var j=0; j < urlFields.length; j++) {
+		urlFields[j].addEventListener('blur', maybePrefixUrlField);
+	}
+}
+})();</script>			<script data-cfasync="false" type="text/javascript">
+				window.onload = function () {
+					var thim_preload = document.getElementById('preload')
+					if (thim_preload) {
+						setTimeout(function () {
+							var body = document.getElementById('thim-body'),
+								len = body.childNodes.length,
+								class_name = body.className.replace(/(?:^|\s)thim-body-preload(?!\S)/, '').replace(/(?:^|\s)thim-body-load-overlay(?!\S)/, '')
+
+							body.className = class_name
+							if (typeof thim_preload !== 'undefined' && thim_preload !== null) {
+								for (var i = 0; i < len; i++) {
+									if (body.childNodes[i].id !== 'undefined' && body.childNodes[i].id == 'preload') {
+										body.removeChild(body.childNodes[i])
+										break
+									}
+								}
+							}
+						}, 500)
+					} else {
+
+					}
+				}
+			</script>
+					<script>
+			window.addEventListener('load', function () {
+				setTimeout(function () {
+					var $ = jQuery
+					var $carousel = $('.thim-owl-carousel-post').each(function () {
+						$(this).find('.image').css('min-height', 0)
+						$(window).trigger('resize')
+					})
+				}, 500)
+			})
+		</script>
+		<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=766016334541920&ev=PageView&noscript=1&cd%5Bpage_title%5D=Machine+Learning+for+Data+Science&cd%5Bpost_type%5D=lp_course&cd%5Bpost_id%5D=11672&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=riskanalyticsperu.com%2Fcurso%2Fmachine-learning-for-data-science%2F" alt="facebook_pixel"></noscript>
+	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='elementor-post-11676-css' href='https://riskanalyticsperu.com/wp-content/uploads/elementor/css/post-11676.css?ver=1668467363' type='text/css' media='all' />
+<link rel='stylesheet' id='hfe-widgets-style-css' href='https://riskanalyticsperu.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.11' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-8887-css' href='https://riskanalyticsperu.com/wp-content/uploads/elementor/css/post-8887.css?ver=1657164846' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-8891-css' href='https://riskanalyticsperu.com/wp-content/uploads/elementor/css/post-8891.css?ver=1657165011' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-8895-css' href='https://riskanalyticsperu.com/wp-content/uploads/elementor/css/post-8895.css?ver=1660686413' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-2-css' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href='https://riskanalyticsperu.com/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.14' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/metronet-profile-picture/js/mpp-frontend.js?ver=2.6.0' id='mpp_gutenberg_tabs-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/riskanalyticsperu.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":0};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.6.1' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.14' defer async id='tp-tools-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.14' defer async id='revmin-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/vendor/react.min.js?ver=17.0.1' id='react-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/vendor/react-dom.min.js?ver=17.0.1' id='react-dom-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/escape-html.min.js?ver=03e27a7b6ae14f7afaa6' id='wp-escape-html-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/element.min.js?ver=47162ff4492c7ec4956b' id='wp-element-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/deprecated.min.js?ver=6c963cb9494ba26b77eb' id='wp-deprecated-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/dom.min.js?ver=133a042fbbef48f38107' id='wp-dom-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/is-shallow-equal.min.js?ver=20c2b06ecf04afb14fee' id='wp-is-shallow-equal-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' id='wp-keycodes-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2022-11-10 18:26:16+0000","generator":"GlotPress\/4.0.0-alpha.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"Backtick":["Acento grave"],"Period":["Punto"],"Comma":["Coma"]}},"comment":{"reference":"wp-includes\/js\/dist\/keycodes.js"}} );
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/keycodes.min.js?ver=6e0aadc0106bd8aadc89' id='wp-keycodes-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/priority-queue.min.js?ver=99e325da95c5a35c7dc2' id='wp-priority-queue-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/compose.min.js?ver=37228270687b2a94e518' id='wp-compose-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/redux-routine.min.js?ver=c9ea6c0df793258797e6' id='wp-redux-routine-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/data.min.js?ver=d8cf5b24f99c64ae47d6' id='wp-data-js'></script>
+<script type='text/javascript' id='wp-data-js-after'>
+( function() {
+	var userId = 0;
+	var storageKey = "WP_DATA_USER_" + userId;
+	wp.data
+		.use( wp.data.plugins.persistence, { storageKey: storageKey } );
+} )();
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/url.min.js?ver=bb0ef862199bcae73aa7' id='wp-url-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2022-11-10 18:26:16+0000","generator":"GlotPress\/4.0.0-alpha.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"You are probably offline.":["Probablemente est\u00e1s desconectado."],"Media upload failed. If this is a photo or a large image, please scale it down and try again.":["La subida de medios ha fallado. Si esto es una foto o una imagen grande, por favor, reduce su tama\u00f1o e int\u00e9ntalo de nuevo."],"The response is not a valid JSON response.":["Las respuesta no es una respuesta JSON v\u00e1lida."],"An unknown error occurred.":["Ha ocurrido un error desconocido."]}},"comment":{"reference":"wp-includes\/js\/dist\/api-fetch.js"}} );
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/dist/api-fetch.min.js?ver=bc0029ca2c943aec5311' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://riskanalyticsperu.com/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "2f035cab20" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://riskanalyticsperu.com/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/learnpress/assets/js/dist/frontend/single-course.min.js?ver=4.1.5' id='lp-single-course-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/js/main.min.js?ver=4.6.5' id='thim-main-js'></script>
+<script type='text/javascript' id='thim-custom-script-js-extra'>
+/* <![CDATA[ */
+var thim_js_translate = {"login":"Nombre de usuario","password":"Contrase\u00f1a","close":"Cerrar"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/js/custom-script-v2.min.js?ver=63b70c2b49b2b' id='thim-custom-script-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/js/thim-course-filter.min.js?ver=4.6.5' id='thim-scripts-course-filter-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/themes/eduma/assets/js/thim-scripts.min.js?ver=4.6.5' id='thim-scripts-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_71266e5cd284cc1f72ccecfe176577a8","fragment_name":"wc_fragments_71266e5cd284cc1f72ccecfe176577a8","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=6.5.1' id='wc-cart-fragments-js'></script>
+<script type='text/javascript' defer src='https://riskanalyticsperu.com/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.8.7' id='mc4wp-forms-api-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.3.0' id='elementor-pro-webpack-runtime-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.5.6' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.5.6' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/riskanalyticsperu.com\/wp-admin\/admin-ajax.php","nonce":"11f0d2459b","urls":{"assets":"https:\/\/riskanalyticsperu.com\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"menu_cart":{"cart_page_url":"https:\/\/riskanalyticsperu.com\/cart\/","checkout_page_url":"https:\/\/riskanalyticsperu.com\/checkout\/"},"facebook_sdk":{"lang":"es_ES","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/riskanalyticsperu.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.3.0' id='elementor-pro-frontend-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir v\u00eddeo","previous":"Anterior","next":"Siguiente","close":"Cerrar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"M\u00f3vil","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"M\u00f3vil grande","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tableta","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tableta grande","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.5.6","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true,"video-playlist":true},"urls":{"assets":"https:\/\/riskanalyticsperu.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":11672,"title":"Machine%20Learning%20for%20Data%20Science%20%E2%80%93%20Risk%20Analytics%20Per%C3%BA","excerpt":"","featuredImage":"https:\/\/riskanalyticsperu.com\/wp-content\/uploads\/2022\/10\/Mesa-de-trabajo-19.png"}};
+</script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.5.6' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='https://riskanalyticsperu.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.3.0' id='pro-elements-handlers-js'></script>
+<div class="lp-overlay">
+<div class="lp-modal-dialog">
+	<div class="lp-modal-content">
+		<div class="lp-modal-header">
+			<h3 class="modal-title">Modal title</h3>
+		</div>
+		<div class="lp-modal-body">
+			<div class="main-content">Main Content</div>
+		</div>
+		<div class="lp-modal-footer">
+			<button type="button" class="lp-button btn-no">No</button>
+			<button type="button" class="lp-button btn-yes">Sí</button>
+		</div>
+	</div>
+</div>
+</div></body>
+</html>
+<!-- Page generated by LiteSpeed Cache 4.6 on 2023-01-05 17:43:09 -->
+<!-- Dynamic page generated in 5.526 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2023-01-05 17:43:09 -->
+
+<!-- super cache -->
